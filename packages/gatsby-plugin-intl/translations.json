@@ -1,0 +1,44 @@
+{
+  "en": {
+    "translation": {
+      "siteMetadata": {
+        "title": "Gatsby i18n project",
+        "description": "A i18n starter to get you up & running"
+      },
+      "landing": {
+        "title": "Welcome to the site",
+        "description": "We are excited to have you here!"
+      },
+      "about": {
+        "title": "Who we are",
+        "description": "A few words about us"
+      },
+      "404": {
+        "title": "Not found",
+        "description": "You just hit a route that doesn't exist... the sadness."
+      }
+    }
+  },
+  "el": {
+    "translation": {
+      "siteMetadata": {
+        "title": "Gatsby πολύγλωσσο project",
+        "description": "Ένα μικρό project για να ξεκινήσετε με πολύγλωσσα projects σε Gatsby"
+      },
+      "landing": {
+        "title": "Καλωσήρθατε",
+        "description": "Είμαστε ενθουσιασμένοι που μας επισκεφτήκατε"
+      },
+      "about": {
+        "title": "Ποιοί Είμαστε",
+        "description": "Λίγα λόγια για εμάς"
+      },
+      "404": {
+        "title": "Δεν βρέθηκε",
+        "description": "Μάλλον βρεθήκατε εδώ κατά τύχη μιας και η σελίδα δεν υπάρχει"
+      }
+    }
+  }
+}
+
+

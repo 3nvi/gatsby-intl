@@ -1,0 +1,51 @@
+{
+  "name": "@3nvi/gatsby-plugin-intl",
+  "private": false,
+  "main": "src/index.jsx",
+  "description": "A plugin to help automate the mundane tasks of internalization",
+  "version": "0.1.0",
+  "author": "Aggelos Arvanitakis (@3nvi)",
+  "dependencies": {
+    "i18next": "^19.3.1",
+    "react-i18next": "^11.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "babel-preset-gatsby-package": "^0.2.16",
+    "cross-env": "^7.0.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "prettier": "^1.19.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "gatsby": ">=2.0.0"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-plugin-intl",
+    "i18n",
+    "intl",
+    "internalization",
+    "multi-language"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3nvi/gatsby-intl"
+  },
+  "bugs": {
+    "url": "https://github.com/3nvi/gatsby-intl/issues"
+  }
+}
