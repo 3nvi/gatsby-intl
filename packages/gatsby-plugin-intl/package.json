@@ -1,14 +1,10 @@
 {
   "name": "@3nvi/gatsby-plugin-intl",
   "private": false,
-  "main": "src/index.jsx",
-  "description": "A plugin to help automate the mundane tasks of internalization",
+  "main": "src/index.js",
+  "description": "A plugin to automatically generate localized seo-friendly versions of your pages",
   "version": "0.1.0",
   "author": "Aggelos Arvanitakis (@3nvi)",
-  "dependencies": {
-    "i18next": "^19.3.1",
-    "react-i18next": "^11.3.3"
-  },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
@@ -26,6 +22,8 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
+    "gatsby-plugin-react-helmet": ">=3.1.6",
+    "react-helmet": ">=5.2.1",
     "gatsby": ">=2.0.0"
   },
   "keywords": [
@@ -45,7 +43,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/3nvi/gatsby-intl"
+    "url": "https://github.com/3nvi/gatsby-intl",
+    "directory": "packages/gatsby-plugin-intl"
   },
   "bugs": {
     "url": "https://github.com/3nvi/gatsby-intl/issues"

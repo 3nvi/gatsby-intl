@@ -9,7 +9,17 @@
   "plugins": ["react-hooks", "jsx-a11y"],
   "rules": {
     "no-unused-vars": "error",
+    "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
   }
 }

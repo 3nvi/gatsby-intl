@@ -3,12 +3,13 @@
  * For example, pages/404.js will be converted to /en/404.js and /el/404.js and
  * it will be accessible from https:// .../en/404/ and https:// .../el/404/
  */
-exports.onCreatePage = async (
+import { DEFAULT_OPTIONS } from './constants';
+
+export const onCreatePage = async (
   { page, actions: { createPage, deletePage, createRedirect } },
   pluginOptions
 ) => {
-  const { siteUrl, supportedLanguages } = { ...DEFAULT_OPTIONS, ...pluginOptions };
-  console.log(supportedLanguages);
+  const { siteUrl, supportedLanguages, defaultLanguage } = { ...DEFAULT_OPTIONS, ...pluginOptions };
   const isEnvDevelopment = process.env.NODE_ENV === 'development';
   const originalPath = page.path;
 
