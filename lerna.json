@@ -8,15 +8,10 @@
       "bump": "patch",
       "conventionalCommits": true,
       "message": "chore(release): Publish",
-      "ignoreChanges": [
-        "CHANGELOG.md",
-        "**/__tests__/**"
-      ]
+      "ignoreChanges": ["CHANGELOG.md", "**/__tests__/**"]
     }
   },
-  "packages": [
-    "packages/gatsby-plugin-*"
-  ],
-  "version": "0.1.0",
+  "packages": ["packages/gatsby-plugin-*"],
+  "version": "0.1.1",
   "registry": "https://registry.npmjs.org/"
 }

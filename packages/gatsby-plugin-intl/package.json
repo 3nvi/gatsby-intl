@@ -3,7 +3,7 @@
   "private": false,
   "main": "src/index.js",
   "description": "A plugin to automatically generate localized seo-friendly versions of your pages",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Aggelos Arvanitakis (@3nvi)",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -12,11 +12,11 @@
     "cross-env": "^7.0.1"
   },
   "peerDependencies": {
+    "gatsby": ">=2.0.0",
+    "gatsby-plugin-react-helmet": ">=3.1.6",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
-    "gatsby-plugin-react-helmet": ">=3.1.6",
-    "react-helmet": ">=5.2.1",
-    "gatsby": ">=2.0.0"
+    "react-helmet": ">=5.2.1"
   },
   "keywords": [
     "gatsby",
