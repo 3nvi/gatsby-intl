@@ -2,7 +2,7 @@
   "name": "@3nvi/gatsby-plugin-intl",
   "private": false,
   "main": "src/index.js",
-  "description": "A plugin to automatically generate localized seo-friendly versions of your pages",
+  "description": "A plugin to automatically generate localized versions of your pages with SEO support",
   "version": "0.1.3",
   "author": "Aggelos Arvanitakis (@3nvi)",
   "devDependencies": {
