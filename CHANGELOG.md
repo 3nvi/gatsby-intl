@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.5](https://github.com/3nvi/gatsby-intl/compare/v0.1.4...v0.1.5) (2020-03-05)
+
+### Bug Fixes
+
+- **package.json:** add public access ([50d9259](https://github.com/3nvi/gatsby-intl/commit/50d9259267cc39541310d37426450dde01a28bd9))
+
 ## [0.1.4](https://github.com/3nvi/gatsby-intl/compare/v0.1.3...v0.1.4) (2020-03-05)
 
 ### Bug Fixes
