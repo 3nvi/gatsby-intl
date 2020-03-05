@@ -28,6 +28,9 @@
     "multi-language"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "babel src --out-dir . --ignore **/__tests__",
     "watch": "babel -w src --out-dir . --ignore **/__tests__",
@@ -41,5 +44,5 @@
   "bugs": {
     "url": "https://github.com/3nvi/gatsby-intl/issues"
   },
-  "gitHead": "b50eefc5dd7eb65ae5d425ea767ff31ac9b01aeb"
+  "gitHead": "7dd8a6460c1f40074c4c329a8941d5023ae0f5b3"
 }
