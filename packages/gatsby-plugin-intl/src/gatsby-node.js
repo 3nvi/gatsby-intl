@@ -9,9 +9,13 @@ export const onCreatePage = async (
   { page, actions: { createPage, deletePage, createRedirect } },
   pluginOptions
 ) => {
-  const { siteUrl, supportedLanguages, defaultLanguage } = { ...DEFAULT_OPTIONS, ...pluginOptions };
+  const { siteUrl, supportedLanguages, defaultLanguage, notFoundPages } = {
+    ...DEFAULT_OPTIONS,
+    ...pluginOptions,
+  };
   const isEnvDevelopment = process.env.NODE_ENV === 'development';
   const originalPath = page.path;
+  const is404 = notFoundPages.some(p => originalPath.includes(p));
 
   // Delete the original page (since we are gonna create localized versions of it) and add a
   // redirect header
@@ -23,12 +27,12 @@ export const onCreatePage = async (
 
       // create a redirect based on the accept-language header
       createRedirect({
-        fromPath: originalPath,
+        fromPath: is404 ? `/${lang}/*` : originalPath,
         toPath: localizedPath,
         Language: lang,
         isPermanent: false,
         redirectInBrowser: isEnvDevelopment,
-        statusCode: 301,
+        statusCode: is404 ? 404 : 301,
       });
 
       await createPage({
@@ -48,10 +52,10 @@ export const onCreatePage = async (
   // Create a fallback redirect if the language is not supported or the
   // Accept-Language header is missing for some reason
   createRedirect({
-    fromPath: originalPath,
+    fromPath: is404 ? '/*' : originalPath,
     toPath: `/${defaultLanguage}${page.path}`,
     isPermanent: false,
     redirectInBrowser: isEnvDevelopment,
-    statusCode: 301,
+    statusCode: is404 ? 404 : 301,
   });
 };
