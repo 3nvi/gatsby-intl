@@ -1,0 +1,52 @@
+{
+  "name": "@3nvi/gatsby-theme-intl",
+  "private": false,
+  "main": "src/index.js",
+  "description": "A theme to automate the mundane tasks of translation & localization of static pages",
+  "version": "0.1.0",
+  "author": "Aggelos Arvanitakis (@3nvi)",
+  "dependencies": {
+    "@3nvi/gatsby-plugin-intl": "^0.1.6",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "i18next": "^19.3.2",
+    "react-helmet": "^5.2.1",
+    "react-i18next": "^11.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "babel-preset-gatsby-package": "^0.2.16",
+    "cross-env": "^7.0.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "gatsby": ">=2.0.0"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-theme-intl",
+    "i18n",
+    "intl",
+    "internalization",
+    "multi-language"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3nvi/gatsby-intl",
+    "directory": "packages/gatsby-theme-intl"
+  },
+  "bugs": {
+    "url": "https://github.com/3nvi/gatsby-intl/issues"
+  }
+}
