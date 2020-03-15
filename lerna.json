@@ -11,7 +11,7 @@
       "ignoreChanges": ["CHANGELOG.md", "**/__tests__/**"]
     }
   },
-  "packages": ["packages/gatsby-plugin-*"],
+  "packages": ["packages/*"],
   "version": "0.1.6",
   "registry": "https://registry.npmjs.org/"
 }
