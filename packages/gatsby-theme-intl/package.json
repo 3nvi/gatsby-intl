@@ -9,6 +9,7 @@
     "@3nvi/gatsby-plugin-intl": "^0.1.6",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "i18next": "^19.3.2",
+    "lodash.merge": "^4.6.2",
     "react-helmet": "^5.2.1",
     "react-i18next": "^11.3.3"
   },
