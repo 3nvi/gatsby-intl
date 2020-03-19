@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.9](https://github.com/3nvi/gatsby-intl/compare/v0.1.6...v0.1.9) (2020-03-19)
+
+### Features
+
+- **gatsby-plugin-intl:** add `notFoundPage` and `excludedPages` option ([5f9f49f](https://github.com/3nvi/gatsby-intl/commit/5f9f49f8991a3ae9b69e062cab90d3af74e72130))
+- **gatsby-plugin-intl:** add 404 support ([ed70068](https://github.com/3nvi/gatsby-intl/commit/ed70068b1e1a17e726ae8817c6661e3274b3b12b))
+
 ## [0.1.8](https://github.com/3nvi/gatsby-intl/compare/v0.1.6...v0.1.8) (2020-03-19)
 
 ### Features
