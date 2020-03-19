@@ -3,8 +3,12 @@
     "create": {
       "license": "MIT"
     },
+    "bootstrap": {
+      "npmClientArgs": ["--no-package-lock"]
+    },
     "publish": {
       "allowBranch": "master",
+      "npmClientArgs": ["--no-package-lock"],
       "bump": "patch",
       "conventionalCommits": true,
       "message": "chore(release): publish",
@@ -12,6 +16,6 @@
     }
   },
   "packages": ["packages/*"],
-  "version": "0.1.6",
+  "version": "0.1.7",
   "registry": "https://registry.npmjs.org/"
 }
