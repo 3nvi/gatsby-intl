@@ -1,12 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { DEFAULT_OPTIONS } from './constants';
 
 /**
  * Wrap all pages with a Translation provider and set the language on SSR time
  */
-export const wrapPageElement = ({ element, props }, { excludedPages }) => {
+export const wrapPageElement = ({ element, props }, pluginOptions) => {
   const { lang, originalPath, siteUrl, supportedLanguages } = props.pageContext;
 
+  const excludedPages = pluginOptions.excludedPages || DEFAULT_OPTIONS.excludedPages;
   if (excludedPages.includes(props.location.pathname)) {
     return element;
   }
