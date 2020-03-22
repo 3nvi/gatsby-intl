@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.12](https://github.com/3nvi/gatsby-intl/compare/v0.1.11...v0.1.12) (2020-03-22)
+
+### Bug Fixes
+
+- **gatsby-plugin-intl:** add fallback for optional plugin option ([282b4f2](https://github.com/3nvi/gatsby-intl/commit/282b4f2ee6c35f16e9839b0dc55f27832a61af6d))
+
 ## [0.1.11](https://github.com/3nvi/gatsby-intl/compare/v0.1.10...v0.1.11) (2020-03-22)
 
 ### Bug Fixes
