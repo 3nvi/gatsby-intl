@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.11](https://github.com/3nvi/gatsby-intl/compare/v0.1.10...v0.1.11) (2020-03-22)
+
+### Bug Fixes
+
+- **gatsby-plugin-intl:** add default localhost port to 8080 ([8e5d6ab](https://github.com/3nvi/gatsby-intl/commit/8e5d6ab34384f548da91fa2ca8982f4d6b210f7f))
+- **gatsby-plugin-intl:** don't add SEO-intl Helmet for excluded pages ([84165c4](https://github.com/3nvi/gatsby-intl/commit/84165c4fd392a15b46a3dfaa6527b75f02cd5ec8))
+
 ## [0.1.10](https://github.com/3nvi/gatsby-intl/compare/v0.1.6...v0.1.10) (2020-03-19)
 
 ### Bug Fixes
