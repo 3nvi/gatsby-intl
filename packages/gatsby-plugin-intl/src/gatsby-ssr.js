@@ -4,8 +4,13 @@ import { Helmet } from 'react-helmet';
 /**
  * Wrap all pages with a Translation provider and set the language on SSR time
  */
-export const wrapPageElement = ({ element, props }) => {
+export const wrapPageElement = ({ element, props }, { excludedPages }) => {
   const { lang, originalPath, siteUrl, supportedLanguages } = props.pageContext;
+
+  if (excludedPages.includes(props.location.pathname)) {
+    return element;
+  }
+
   return (
     <React.Fragment>
       <Helmet htmlAttributes={{ lang }}>
@@ -25,4 +30,3 @@ export const wrapPageElement = ({ element, props }) => {
     </React.Fragment>
   );
 };
-
