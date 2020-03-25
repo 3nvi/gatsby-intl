@@ -1,7 +1,7 @@
 {
   "name": "@3nvi/gatsby-theme-intl",
   "private": false,
-  "main": "src/index.js",
+  "main": "index.js",
   "description": "A theme to automate the mundane tasks of translation & localization of static pages",
   "version": "0.1.12",
   "author": "Aggelos Arvanitakis (@3nvi)",
