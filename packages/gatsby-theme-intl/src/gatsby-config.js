@@ -1,21 +1,10 @@
-const gatsbyConfig = ({
-  supportedLanguages,
-  defaultLanguage,
-  siteUrl,
-  notFoundPage,
-  excludedPages,
-}) => ({
+// eslint-disable-next-line no-unused-vars
+const gatsbyConfig = ({ i18nextConfig, ...intlPluginOpts }) => ({
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-intl',
-      options: {
-        supportedLanguages,
-        defaultLanguage,
-        siteUrl,
-        notFoundPage,
-        excludedPages,
-      },
+      resolve: '@3nvi/gatsby-plugin-intl',
+      options: intlPluginOpts,
     },
   ],
 });
