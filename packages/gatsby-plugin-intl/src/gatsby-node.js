@@ -5,12 +5,11 @@
  */
 import { DEFAULT_OPTIONS } from './constants';
 
-const isEnvDevelopment = process.env.NODE_ENV === 'development';
-
 export const onCreatePage = async (
   { page, actions: { createPage, deletePage, createRedirect } },
   pluginOptions
 ) => {
+  const isEnvDevelopment = process.env.NODE_ENV === 'development';
   const { siteUrl, supportedLanguages, defaultLanguage, notFoundPage, excludedPages } = {
     ...DEFAULT_OPTIONS,
     ...pluginOptions,
@@ -66,7 +65,8 @@ export const onCreatePage = async (
   });
 };
 
-exports.onPreBuild = ({ actions: { createRedirect } }, pluginOptions) => {
+export const onPreBuild = ({ actions: { createRedirect } }, pluginOptions) => {
+  const isEnvDevelopment = process.env.NODE_ENV === 'development';
   const { notFoundPage } = { ...DEFAULT_OPTIONS, ...pluginOptions };
 
   // we add a generic redirect to the "not found path" for every path that's not present in the app.

@@ -4,14 +4,23 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.3.4",
+    "@testing-library/jest-dom": "^5.3.0",
+    "@testing-library/react": "^10.0.1",
+    "@types/faker": "^4.1.11",
+    "@types/jest": "^25.1.4",
+    "@types/testing-library__react": "^9.1.3",
+    "babel-jest": "^25.2.3",
+    "babel-preset-gatsby": "^0.3.1",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "faker": "^4.1.0",
     "gatsby": "^2.19.43",
     "gatsby-plugin-react-helmet": "^3.1.6",
     "husky": "^3.1.0",
+    "jest": "^25.2.3",
     "lerna": "^3.20.2",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
@@ -26,6 +35,7 @@
     "build": "lerna run --parallel build",
     "clean": "lerna clean --yes",
     "publish": "lerna publish",
-    "bootstrap": "lerna bootstrap --ignore-scripts"
+    "bootstrap": "lerna bootstrap --ignore-scripts",
+    "test": "jest"
   }
 }

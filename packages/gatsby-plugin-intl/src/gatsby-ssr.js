@@ -7,8 +7,8 @@ import { DEFAULT_OPTIONS } from './constants';
  */
 export const wrapPageElement = ({ element, props }, pluginOptions) => {
   const { lang, originalPath, siteUrl, supportedLanguages } = props.pageContext;
+  const { excludedPages } = { ...DEFAULT_OPTIONS, ...pluginOptions };
 
-  const excludedPages = pluginOptions.excludedPages || DEFAULT_OPTIONS.excludedPages;
   if (excludedPages.includes(props.location.pathname)) {
     return element;
   }
