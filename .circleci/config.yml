@@ -3,22 +3,26 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
 
+commands:
+  setup:
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm run bootstrap
+
 jobs:
   test:
     executor:
       name: node/default
     steps:
-      - checkout
-      - run: npm i
+      - setup
       - run: npm run test
 
   publish:
     executor:
       name: node/default
     steps:
-      - checkout
-      - run: npm i
-      - run: npm run bootstrap
+      - setup
       - run: npm run publish
 
 workflows:
