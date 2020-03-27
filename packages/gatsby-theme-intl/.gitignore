@@ -1,4 +1,4 @@
 /*.js
-!index.js
+/*.d.ts
 /components
 package-lock.json
