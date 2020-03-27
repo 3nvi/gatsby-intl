@@ -1,3 +1,123 @@
-## gatsby-theme-intl
+# `gatsby-theme-intl`
 
-Coming soon
+Helps with i18n by creating pages & handling translations for all your supported locales.
+
+## Features
+
+In short, this does everything [gatsby-plugin-intl](https://github.com/3nvi/gatsby-intl/tree/master/packages/gatsby-plugin-intl) does, while exposing  
+React Components to help you handle translations and other internalization chores. It:
+
+- Creates a page for each of your locales and exposes them through different URLs
+- Sets the locale for this page and exposes it through `React.Context` to any component within the page
+- Creates all the necessary SEO tags for each of your new localized pages
+- Creates proper redirects based on Language headers, as well as the default/fallback language
+
+At its core, this plugin exposes two useful hooks:
+
+### `usePageContext`
+
+Returns information about the current page.
+
+```jsx harmony
+import { usePageContext } from '@3nvi/gatsby-theme-intl';
+
+const Component = () => {
+  const {
+    // The language of the current page (i.e. `en`)
+    lang,
+    // The original path of the page before it became localized (i.e. `/about`)
+    originalPath,
+    // The supported languages of your application (i.e. `['en']`)
+    supportedLanguages,
+    //The URL of your current site (i.e `http://localhost:8000`)
+    siteUrl,
+  } = usePageContext();
+
+  return <div />;
+};
+```
+
+### `useTranslation`
+
+Returns a helper functions for translations. This package uses & configures [i18next](https://github.com/i18next/i18next)
+under the hood, so you can read more there about how to configure your translations.
+
+```jsx harmony
+import { useTranslation } from '@3nvi/gatsby-theme-intl';
+
+const Component = () => {
+  const { t } = useTranslation();
+
+  return <div>{t('greeting')}</div>;
+};
+```
+
+In addition to those 2 hooks, the package configures & forwards all React components present in
+the [react-i18next](https://github.com/i18next/react-i18next/) package.
+
+## Quick Start
+
+This plugin composes [gatsby-plugin-intl](https://github.com/3nvi/gatsby-intl/tree/master/packages/gatsby-plugin-intl):
+
+```
+npm i @3nvi/gatsby-theme-intl
+```
+
+and in your `gatsby-config.js`:
+
+```js
+{
+  // ... rest of your config
+  plugins: [
+    // ... other plugins
+    {
+      resolve: `@3nvi/gatsby-theme-intl`,
+      options: {
+        // ...
+      },
+    },
+  ];
+}
+```
+
+## Configuration
+
+The plugin accepts all **optional options** present in [gatsby-plugin-intl](https://github.com/3nvi/gatsby-intl/tree/master/packages/gatsby-plugin-intl). Additionally,
+it accepts the following:
+
+- `i18nextConfig`: Configuration optioons for the `i18next` instance that this theme uses under the hood. The available
+  options can be found in the [official docs](https://www.i18next.com/overview/configuration-options).
+
+  This package already adds a sane default configuration for i18next, which is automatically merged with
+  the one you provide. The minimum **required** configuration option from your part is the `resources` option.
+
+Example configuration:
+
+```js
+const translations = require('./i18n.json');
+
+{
+  // ... rest of your config
+  plugins: [
+    // ... other plugins
+    {
+      resolve: `@3nvi/gatsby-theme-intl`,
+      options: {
+        supportedLanguages: ['en', 'fr']
+        i18nextConfig: {
+          resources: translations,
+        },
+      },
+    },
+  ];
+}
+```
+
+## Usage Examples
+
+Visit the related [gatsby starter](https://github.com/3nvi/gatsby-intl/tree/master/packages/gatsby-starter-intl) to
+see a full example of how this plugin can be used
+
+## License
+
+MIT
