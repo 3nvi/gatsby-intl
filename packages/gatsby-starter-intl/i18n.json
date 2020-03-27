@@ -1,0 +1,36 @@
+{
+  "en": {
+    "translation": {
+      "common": {
+        "goToHomePage": "Go back to the homepage",
+        "goToSecondPage": "Go to page 2"
+      },
+      "home": {
+        "greeting": "Hi people",
+        "details": "Welcome to your new Gatsby site.",
+        "prompt": "Now go build something great."
+      },
+      "secondPage": {
+        "greeting": "Hi from the second page",
+        "details": "Welcome to page 2"
+      }
+    }
+  },
+  "el": {
+    "translation": {
+      "common": {
+        "goToHomePage": "Πίσω στην αρχική",
+        "goToSecondPage": "2η σελίδα"
+      },
+      "home": {
+        "greeting": "Γεία σας",
+        "details": "Καλωσήλθατε στο νεο Gatsby site σας",
+        "prompt": "Πηγαίνετε τώρα να φτιάξετε κάτι σπουδαίοο."
+      },
+      "secondPage": {
+        "greeting": "Γειά απο τη 2η σελίδα",
+        "details": "Καλωσήλθατε στη 2η σελίδα"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "@3nvi/gatsby-starter-intl",
+  "version": "0.1.12",
+  "description": "A gatsby starter to help create i18n applications",
+  "author": "Aggelos Arvanitakis (@3nvi)",
+  "homepage": "https://github.com/3nvi/gatsby-intl#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "private": false,
+  "keywords": [
+    "gatsby",
+    "gatsby-starter",
+    "gatsby-starter-intl",
+    "i18n",
+    "intl",
+    "internalization",
+    "multi-language"
+  ],
+  "dependencies": {
+    "@3nvi/gatsby-theme-intl": "^0.1.12",
+    "gatsby": "^2.18.1",
+    "gatsby-image": "^2.2.33",
+    "gatsby-plugin-manifest": "^2.2.29",
+    "gatsby-plugin-netlify": "^2.2.1",
+    "gatsby-plugin-offline": "^3.0.22",
+    "gatsby-plugin-sass": "^2.1.23",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-sitemap": "^2.2.27",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-sharp": "^2.4.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3nvi/gatsby-intl",
+    "directory": "packages/gatsby-starter-intl"
+  },
+  "bugs": {
+    "url": "https://github.com/3nvi/gatsby-intl/issues"
+  }
+}
