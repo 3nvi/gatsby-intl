@@ -4,13 +4,6 @@ orbs:
   node: circleci/node@1.1.6
 
 jobs:
-  audit:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - run: npm audit
-
   test:
     executor:
       name: node/default
@@ -23,5 +16,4 @@ workflows:
   version: 2
   pipeline:
     jobs:
-      - audit
       - test
