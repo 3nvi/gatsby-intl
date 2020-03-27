@@ -35,7 +35,7 @@
     "build": "lerna run --parallel build",
     "clean": "lerna clean --yes",
     "publish": "lerna publish",
-    "bootstrap": "lerna bootstrap --ignore-scripts",
+    "bootstrap": "lerna bootstrap --hoist --ignore-scripts",
     "test": "jest"
   }
 }
