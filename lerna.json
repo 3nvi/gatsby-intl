@@ -4,18 +4,27 @@
       "license": "MIT"
     },
     "bootstrap": {
-      "npmClientArgs": ["--no-package-lock"]
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
     },
     "publish": {
       "allowBranch": "master",
-      "npmClientArgs": ["--no-package-lock"],
+      "npmClientArgs": [
+        "--no-package-lock"
+      ],
       "bump": "patch",
       "conventionalCommits": true,
       "message": "chore(release): publish",
-      "ignoreChanges": ["CHANGELOG.md", "**/__tests__/**"]
+      "ignoreChanges": [
+        "CHANGELOG.md",
+        "**/__tests__/**"
+      ]
     }
   },
-  "packages": ["packages/*"],
-  "version": "0.1.13",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.1.14",
   "registry": "https://registry.npmjs.org/"
 }

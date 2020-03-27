@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.14](https://github.com/3nvi/gatsby-intl/compare/v0.1.13...v0.1.14) (2020-03-27)
+
+
+### Bug Fixes
+
+* description ([d545118](https://github.com/3nvi/gatsby-intl/commit/d5451187138e7cce2222d42bdfdf7539ea213465))
+* **gatsby-theme-intl:** broken test ([0909bfb](https://github.com/3nvi/gatsby-intl/commit/0909bfbb1d9aedfad7171c5ec0e2fbf29a4e1408))
+* add hoist on bootstrap ([1ca3481](https://github.com/3nvi/gatsby-intl/commit/1ca3481d5c84756493db6425a49591c28d8d10af))
+
+
+
+
+
 ## [0.1.13](https://github.com/3nvi/gatsby-intl/compare/v0.1.12...v0.1.13) (2020-03-27)
 
 ### Bug Fixes
