@@ -1,0 +1,20 @@
+version: 2.1
+
+jobs:
+  audit:
+    steps:
+      - checkout
+      - npm audit
+
+  test:
+    steps:
+      - checkout
+      - npm i
+      - npm run test
+
+workflows:
+  version: 2
+  pipeline:
+    jobs:
+      - audit
+      - test
