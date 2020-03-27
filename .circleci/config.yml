@@ -17,6 +17,7 @@ jobs:
       name: node/default
     steps:
       - checkout
+      - run: npm i
       - run: npm run bootstrap
       - run: npm run publish
 
