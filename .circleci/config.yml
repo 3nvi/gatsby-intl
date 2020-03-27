@@ -4,13 +4,13 @@ jobs:
   audit:
     steps:
       - checkout
-      - npm audit
+      - run: npm audit
 
   test:
     steps:
       - checkout
-      - npm i
-      - npm run test
+      - run: npm i
+      - run: npm run test
 
 workflows:
   version: 2
