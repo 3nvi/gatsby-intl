@@ -23,7 +23,7 @@ jobs:
       name: node/default
     steps:
       - setup
-      - run: npm run publish
+      - run: npm run publish -- --yes
 
 workflows:
   version: 2
