@@ -15,11 +15,6 @@ export const onCreatePage = async (
   };
 
   const isEnvDevelopment = process.env.NODE_ENV === 'development';
-  const deleteOriginalPages =
-    pluginOptions.deleteOriginalPages !== undefined
-      ? pluginOptions.deleteOriginalPages
-      : !isEnvDevelopment;
-
   const originalPath = page.path;
   const is404 = originalPath.includes(notFoundPage);
 
@@ -30,9 +25,7 @@ export const onCreatePage = async (
 
   // Delete the original page (since we are gonna create localized versions of it) and add a
   // redirect header
-  if (deleteOriginalPages) {
-    await deletePage(page);
-  }
+  await deletePage(page);
 
   await Promise.all(
     supportedLanguages.map(async lang => {
