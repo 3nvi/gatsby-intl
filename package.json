@@ -36,7 +36,7 @@
     "clean": "lerna clean --yes",
     "version": "lerna version --conventional-commits",
     "publish": "lerna publish",
-    "bootstrap": "lerna bootstrap --hoist --ignore-scripts",
+    "bootstrap": "lerna bootstrap --hoist",
     "test": "jest"
   }
 }
