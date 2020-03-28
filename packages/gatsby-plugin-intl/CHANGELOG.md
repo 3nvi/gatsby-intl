@@ -3,16 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [0.2.0](https://github.com/3nvi/gatsby-intl/compare/v0.1.24...v0.2.0) (2020-03-28)
+## [0.2.1](https://github.com/3nvi/gatsby-intl/compare/v0.2.0...v0.2.1) (2020-03-28)
 
+**Note:** Version bump only for package @3nvi/gatsby-plugin-intl
+
+# [0.2.0](https://github.com/3nvi/gatsby-intl/compare/v0.1.24...v0.2.0) (2020-03-28)
 
 ### Features
 
-* proper testing ([c51de1e](https://github.com/3nvi/gatsby-intl/commit/c51de1ee57209957bcec5a5519d81501b1629837))
-
-
-
-
+- proper testing ([c51de1e](https://github.com/3nvi/gatsby-intl/commit/c51de1ee57209957bcec5a5519d81501b1629837))
 
 ## [0.1.24](https://github.com/3nvi/gatsby-intl/compare/v0.1.23...v0.1.24) (2020-03-28)
 

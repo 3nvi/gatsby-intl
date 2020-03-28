@@ -3,22 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [0.2.0](https://github.com/3nvi/gatsby-intl/compare/v0.1.24...v0.2.0) (2020-03-28)
+## [0.2.1](https://github.com/3nvi/gatsby-intl/compare/v0.2.0...v0.2.1) (2020-03-28)
 
+**Note:** Version bump only for package root
+
+# [0.2.0](https://github.com/3nvi/gatsby-intl/compare/v0.1.24...v0.2.0) (2020-03-28)
 
 ### Bug Fixes
 
-* force jest to run in band ([5d9bcf0](https://github.com/3nvi/gatsby-intl/commit/5d9bcf0454f3de21897a07429abbb0e288152acf))
-
+- force jest to run in band ([5d9bcf0](https://github.com/3nvi/gatsby-intl/commit/5d9bcf0454f3de21897a07429abbb0e288152acf))
 
 ### Features
 
-* add conventional commits version to lerna ([e6d3bc7](https://github.com/3nvi/gatsby-intl/commit/e6d3bc7060c401bb19e8a2dc00184a404d90b3fb))
-* proper testing ([c51de1e](https://github.com/3nvi/gatsby-intl/commit/c51de1ee57209957bcec5a5519d81501b1629837))
-
-
-
-
+- add conventional commits version to lerna ([e6d3bc7](https://github.com/3nvi/gatsby-intl/commit/e6d3bc7060c401bb19e8a2dc00184a404d90b3fb))
+- proper testing ([c51de1e](https://github.com/3nvi/gatsby-intl/commit/c51de1ee57209957bcec5a5519d81501b1629837))
 
 ## [0.1.24](https://github.com/3nvi/gatsby-intl/compare/v0.1.23...v0.1.24) (2020-03-28)
 
