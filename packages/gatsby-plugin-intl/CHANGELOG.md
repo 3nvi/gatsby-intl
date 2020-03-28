@@ -3,83 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.24](https://github.com/3nvi/gatsby-intl/compare/v0.1.23...v0.1.24) (2020-03-28)
+
+### Features
+
+- add `deleteOriginalPages` option ([7713f1b](https://github.com/3nvi/gatsby-intl/commit/7713f1bc30b54781bf9e1432366c51ab604a79e8))
+
 ## [0.1.23](https://github.com/3nvi/gatsby-intl/compare/v0.1.22...v0.1.23) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-plugin-intl
-
-
-
-
 
 ## [0.1.22](https://github.com/3nvi/gatsby-intl/compare/v0.1.21...v0.1.22) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-plugin-intl
 
-
-
-
-
 ## [0.1.21](https://github.com/3nvi/gatsby-intl/compare/v0.1.20...v0.1.21) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-plugin-intl
-
-
-
-
 
 ## [0.1.20](https://github.com/3nvi/gatsby-intl/compare/v0.1.19...v0.1.20) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-plugin-intl
 
-
-
-
-
 ## [0.1.19](https://github.com/3nvi/gatsby-intl/compare/v0.1.18...v0.1.19) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-plugin-intl
-
-
-
-
 
 ## [0.1.17](https://github.com/3nvi/gatsby-intl/compare/v0.1.16...v0.1.17) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-plugin-intl
 
-
-
-
-
 ## [0.1.16](https://github.com/3nvi/gatsby-intl/compare/v0.1.15...v0.1.16) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-plugin-intl
 
-
-
-
-
 ## [0.1.15](https://github.com/3nvi/gatsby-intl/compare/v0.1.14...v0.1.15) (2020-03-27)
-
 
 ### Bug Fixes
 
-* typo in description ([8a7590c](https://github.com/3nvi/gatsby-intl/commit/8a7590cceaccd95b9dffce24a85275c1f9937f38))
-
-
-
-
+- typo in description ([8a7590c](https://github.com/3nvi/gatsby-intl/commit/8a7590cceaccd95b9dffce24a85275c1f9937f38))
 
 ## [0.1.14](https://github.com/3nvi/gatsby-intl/compare/v0.1.13...v0.1.14) (2020-03-27)
 
-
 ### Bug Fixes
 
-* description ([d545118](https://github.com/3nvi/gatsby-intl/commit/d5451187138e7cce2222d42bdfdf7539ea213465))
-
-
-
-
+- description ([d545118](https://github.com/3nvi/gatsby-intl/commit/d5451187138e7cce2222d42bdfdf7539ea213465))
 
 ## [0.1.13](https://github.com/3nvi/gatsby-intl/compare/v0.1.12...v0.1.13) (2020-03-27)
 

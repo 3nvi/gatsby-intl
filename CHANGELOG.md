@@ -3,105 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.1.23](https://github.com/3nvi/gatsby-intl/compare/v0.1.22...v0.1.23) (2020-03-28)
+## [0.1.24](https://github.com/3nvi/gatsby-intl/compare/v0.1.23...v0.1.24) (2020-03-28)
 
+### Features
+
+- add `deleteOriginalPages` option ([7713f1b](https://github.com/3nvi/gatsby-intl/commit/7713f1bc30b54781bf9e1432366c51ab604a79e8))
+
+## [0.1.23](https://github.com/3nvi/gatsby-intl/compare/v0.1.22...v0.1.23) (2020-03-28)
 
 ### Bug Fixes
 
-* add exclude pages to starter ([b75252c](https://github.com/3nvi/gatsby-intl/commit/b75252c56ca17bb515570338b38187f3327acee1))
-
-
-
-
+- add exclude pages to starter ([b75252c](https://github.com/3nvi/gatsby-intl/commit/b75252c56ca17bb515570338b38187f3327acee1))
 
 ## [0.1.22](https://github.com/3nvi/gatsby-intl/compare/v0.1.21...v0.1.22) (2020-03-28)
 
-
 ### Bug Fixes
 
-* typo in README ([19ac03f](https://github.com/3nvi/gatsby-intl/commit/19ac03f2c7d28dfd4669a8697b9ae95f1b95c417))
-
-
-
-
+- typo in README ([19ac03f](https://github.com/3nvi/gatsby-intl/commit/19ac03f2c7d28dfd4669a8697b9ae95f1b95c417))
 
 ## [0.1.21](https://github.com/3nvi/gatsby-intl/compare/v0.1.20...v0.1.21) (2020-03-28)
 
-
 ### Bug Fixes
 
-* bug with lodash.merge ([0844c98](https://github.com/3nvi/gatsby-intl/commit/0844c98d2a9338f76904b49120460b74ca557d54))
-
-
-
-
+- bug with lodash.merge ([0844c98](https://github.com/3nvi/gatsby-intl/commit/0844c98d2a9338f76904b49120460b74ca557d54))
 
 ## [0.1.20](https://github.com/3nvi/gatsby-intl/compare/v0.1.19...v0.1.20) (2020-03-28)
 
-
 ### Reverts
 
-* Revert "build: try npx installation" ([7128ad3](https://github.com/3nvi/gatsby-intl/commit/7128ad3e65e35659834bde98ec2d81f9e51cf0cf))
-
-
-
-
+- Revert "build: try npx installation" ([7128ad3](https://github.com/3nvi/gatsby-intl/commit/7128ad3e65e35659834bde98ec2d81f9e51cf0cf))
 
 ## [0.1.19](https://github.com/3nvi/gatsby-intl/compare/v0.1.18...v0.1.19) (2020-03-28)
 
 **Note:** Version bump only for package root
 
-
-
-
-
 ## [0.1.18](https://github.com/3nvi/gatsby-intl/compare/v0.1.17...v0.1.18) (2020-03-28)
 
 **Note:** Version bump only for package root
-
-
-
-
 
 ## [0.1.17](https://github.com/3nvi/gatsby-intl/compare/v0.1.16...v0.1.17) (2020-03-28)
 
 **Note:** Version bump only for package root
 
-
-
-
-
 ## [0.1.16](https://github.com/3nvi/gatsby-intl/compare/v0.1.15...v0.1.16) (2020-03-28)
 
 **Note:** Version bump only for package root
 
-
-
-
-
 ## [0.1.15](https://github.com/3nvi/gatsby-intl/compare/v0.1.14...v0.1.15) (2020-03-27)
-
 
 ### Bug Fixes
 
-* typo in description ([8a7590c](https://github.com/3nvi/gatsby-intl/commit/8a7590cceaccd95b9dffce24a85275c1f9937f38))
-
-
-
-
+- typo in description ([8a7590c](https://github.com/3nvi/gatsby-intl/commit/8a7590cceaccd95b9dffce24a85275c1f9937f38))
 
 ## [0.1.14](https://github.com/3nvi/gatsby-intl/compare/v0.1.13...v0.1.14) (2020-03-27)
 
-
 ### Bug Fixes
 
-* description ([d545118](https://github.com/3nvi/gatsby-intl/commit/d5451187138e7cce2222d42bdfdf7539ea213465))
-* **gatsby-theme-intl:** broken test ([0909bfb](https://github.com/3nvi/gatsby-intl/commit/0909bfbb1d9aedfad7171c5ec0e2fbf29a4e1408))
-* add hoist on bootstrap ([1ca3481](https://github.com/3nvi/gatsby-intl/commit/1ca3481d5c84756493db6425a49591c28d8d10af))
-
-
-
-
+- description ([d545118](https://github.com/3nvi/gatsby-intl/commit/d5451187138e7cce2222d42bdfdf7539ea213465))
+- **gatsby-theme-intl:** broken test ([0909bfb](https://github.com/3nvi/gatsby-intl/commit/0909bfbb1d9aedfad7171c5ec0e2fbf29a4e1408))
+- add hoist on bootstrap ([1ca3481](https://github.com/3nvi/gatsby-intl/commit/1ca3481d5c84756493db6425a49591c28d8d10af))
 
 ## [0.1.13](https://github.com/3nvi/gatsby-intl/compare/v0.1.12...v0.1.13) (2020-03-27)
 

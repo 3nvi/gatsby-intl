@@ -3,7 +3,7 @@
   "private": false,
   "main": "index.js",
   "description": "A plugin to automatically generate localized versions of your pages with SEO support",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "author": "Aggelos Arvanitakis (@3nvi)",
   "devDependencies": {
     "@babel/cli": "^7.8.4",

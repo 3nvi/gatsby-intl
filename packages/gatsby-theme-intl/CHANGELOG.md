@@ -3,80 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.1.23](https://github.com/3nvi/gatsby-intl/compare/v0.1.22...v0.1.23) (2020-03-28)
+## [0.1.24](https://github.com/3nvi/gatsby-intl/compare/v0.1.23...v0.1.24) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
 
+## [0.1.23](https://github.com/3nvi/gatsby-intl/compare/v0.1.22...v0.1.23) (2020-03-28)
 
-
-
+**Note:** Version bump only for package @3nvi/gatsby-theme-intl
 
 ## [0.1.22](https://github.com/3nvi/gatsby-intl/compare/v0.1.21...v0.1.22) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
 
-
-
-
-
 ## [0.1.21](https://github.com/3nvi/gatsby-intl/compare/v0.1.20...v0.1.21) (2020-03-28)
-
 
 ### Bug Fixes
 
-* bug with lodash.merge ([0844c98](https://github.com/3nvi/gatsby-intl/commit/0844c98d2a9338f76904b49120460b74ca557d54))
-
-
-
-
+- bug with lodash.merge ([0844c98](https://github.com/3nvi/gatsby-intl/commit/0844c98d2a9338f76904b49120460b74ca557d54))
 
 ## [0.1.20](https://github.com/3nvi/gatsby-intl/compare/v0.1.19...v0.1.20) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
 
-
-
-
-
 ## [0.1.19](https://github.com/3nvi/gatsby-intl/compare/v0.1.18...v0.1.19) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
-
-
-
-
 
 ## [0.1.17](https://github.com/3nvi/gatsby-intl/compare/v0.1.16...v0.1.17) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
 
-
-
-
-
 ## [0.1.16](https://github.com/3nvi/gatsby-intl/compare/v0.1.15...v0.1.16) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
-
-
-
-
 
 ## [0.1.15](https://github.com/3nvi/gatsby-intl/compare/v0.1.14...v0.1.15) (2020-03-27)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
 
-
-
-
-
 ## [0.1.14](https://github.com/3nvi/gatsby-intl/compare/v0.1.13...v0.1.14) (2020-03-27)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
-
-
-
-
 
 ## [0.1.13](https://github.com/3nvi/gatsby-intl/compare/v0.1.12...v0.1.13) (2020-03-27)
 
