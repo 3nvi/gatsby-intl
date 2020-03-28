@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.21](https://github.com/3nvi/gatsby-intl/compare/v0.1.20...v0.1.21) (2020-03-28)
+
+
+### Bug Fixes
+
+* bug with lodash.merge ([0844c98](https://github.com/3nvi/gatsby-intl/commit/0844c98d2a9338f76904b49120460b74ca557d54))
+
+
+
+
+
 ## [0.1.20](https://github.com/3nvi/gatsby-intl/compare/v0.1.19...v0.1.20) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
