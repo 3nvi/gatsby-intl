@@ -9,8 +9,6 @@
     "publish": {
       "allowBranch": "master",
       "npmClientArgs": ["--no-package-lock"],
-      "bump": "patch",
-      "conventionalCommits": true,
       "message": "chore(release): publish",
       "ignoreChanges": ["CHANGELOG.md", "**/__tests__/**"]
     },
