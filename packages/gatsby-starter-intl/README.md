@@ -27,6 +27,12 @@ npm i
 npm run start
 ```
 
+## Caveats
+
+Due to the fact that each page path is substituted with the localized one, there will be no `/` page
+in the project. Instead all `/` will be redirected to the appropriate locales. Gatsby will complain about
+the absense of an actual `/`, but it's safe to ignore it.
+
 ## License
 
 MIT

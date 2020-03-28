@@ -68,8 +68,12 @@ The plugin accepts the following **optional options**:
   `URL` (which platforms like Netlify automatically populate) or to `localhost:8000` if the environment variable is not present.
 - `exludedPages`: A list page paths that the plugin should ignore. Defaults to `/404.html`.
 - `notFoundPage`: The URL for a custom 404 page. Defaults to `/404/`.
-- `deleteOriginalPages`: A boolean denoting whether to delete the original pages or retain them at
-  the original paths. Defaults to `false` for production environments and `true` for development ones.
+
+## Caveats
+
+Due to the fact that each page path is substituted with the localized one, there will be no `/` page
+in the project. Instead all `/` will be redirected to the appropriate locales. Gatsby will complain about
+the absense of an actual `/`, but it's safe to ignore it.
 
 ## License
 
