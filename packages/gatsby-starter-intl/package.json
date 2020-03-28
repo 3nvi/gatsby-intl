@@ -38,6 +38,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "bin": ".bin/setup.js",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
