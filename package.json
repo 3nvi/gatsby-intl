@@ -34,6 +34,7 @@
   "scripts": {
     "build": "lerna run --parallel build",
     "clean": "lerna clean --yes",
+    "version": "lerna version --conventional-commits",
     "publish": "lerna publish",
     "bootstrap": "lerna bootstrap --hoist --ignore-scripts",
     "test": "jest"

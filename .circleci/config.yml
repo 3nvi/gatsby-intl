@@ -26,6 +26,7 @@ jobs:
       - run: git config user.name "3nvi"
       - run: git config user.email "agg.arvanitakis@gmail.com"
       - run: npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+      - run: npm run version
       - run: npm run publish -- --yes
 
 workflows:
