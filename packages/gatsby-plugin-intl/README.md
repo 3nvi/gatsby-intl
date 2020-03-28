@@ -72,8 +72,11 @@ The plugin accepts the following **optional options**:
 ## Caveats
 
 Due to the fact that each page path is substituted with the localized one, there will be no `/` page
-in the project. Instead all `/` will be redirected to the appropriate locales. Gatsby will complain about
-the absense of an actual `/`, but it's safe to ignore it.
+in the project. Instead all `/` will be redirected to the appropriate locales.
+
+Production builds are fine with that since redirects are handled on the server. Development builds however
+may create a minor problem since redirect happens in the browser (and there is no default page to redirect from).
+Because of this, **page refreshes** on non-localized URLs will not work during development
 
 ## License
 
