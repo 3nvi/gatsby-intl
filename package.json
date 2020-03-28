@@ -37,6 +37,6 @@
     "version": "lerna version --conventional-commits",
     "publish": "lerna publish",
     "bootstrap": "lerna bootstrap --hoist",
-    "test": "jest"
+    "test": "jest --runInBand"
   }
 }
