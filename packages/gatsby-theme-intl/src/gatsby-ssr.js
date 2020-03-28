@@ -6,7 +6,7 @@ import { DEFAULT_OPTIONS } from './constants';
 import { PageContext } from './page-context';
 
 export const wrapRootElement = ({ element }, pluginOptions) => {
-  const { i18nextConfig, defaultLanguage } = merge(DEFAULT_OPTIONS, pluginOptions);
+  const { i18nextConfig, defaultLanguage } = merge({}, DEFAULT_OPTIONS, pluginOptions);
   if (!i18nextConfig.resources) {
     throw new Error(
       'You must specify where to load translations from through the `resources` field of `i18nextConfig`'
