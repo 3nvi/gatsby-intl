@@ -18,10 +18,14 @@ as well as this project's [gatsby-config.js](https://github.com/3nvi/gatsby-intl
 
 ## Installation
 
+Due to the fact that the starter is in a lerna monorepo (and not in a separate standalone repo), installation requires running the additional `npm run bootstrap` command:
+
 ```
-gatsby new intl-site https://github.com/3nvi/gatsby-intl/packages/gatsby-starter-intl
+gatsby new intl-site https://github.com/3nvi/gatsby-intl
 cd intl-site
-npm run develop
+npm run bootstrap
+cd packages/gatsby-starter-intl
+gatsby develop
 ```
 
 ## License
