@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.23](https://github.com/3nvi/gatsby-intl/compare/v0.1.22...v0.1.23) (2020-03-28)
+
+
+### Bug Fixes
+
+* add exclude pages to starter ([b75252c](https://github.com/3nvi/gatsby-intl/commit/b75252c56ca17bb515570338b38187f3327acee1))
+
+
+
+
+
 ## [0.1.22](https://github.com/3nvi/gatsby-intl/compare/v0.1.21...v0.1.22) (2020-03-28)
 
 
