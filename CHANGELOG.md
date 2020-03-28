@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.22](https://github.com/3nvi/gatsby-intl/compare/v0.1.21...v0.1.22) (2020-03-28)
+
+
+### Bug Fixes
+
+* typo in README ([19ac03f](https://github.com/3nvi/gatsby-intl/commit/19ac03f2c7d28dfd4669a8697b9ae95f1b95c417))
+
+
+
+
+
 ## [0.1.21](https://github.com/3nvi/gatsby-intl/compare/v0.1.20...v0.1.21) (2020-03-28)
 
 
