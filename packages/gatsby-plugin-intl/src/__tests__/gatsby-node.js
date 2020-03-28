@@ -107,7 +107,7 @@ describe('onCreatePage', () => {
     const page = createMockPage(pagePath);
 
     process.env.NODE_ENV = 'development';
-    await onCreatePage({ page, actions: { createPage, deletePage, createRedirect } });
+    await onCreatePage({ page, actions: { createPage, deletePage, createRedirect } }, {});
 
     expect(createRedirect.mock.calls[0][0]).toMatchObject({ redirectInBrowser: true });
 
