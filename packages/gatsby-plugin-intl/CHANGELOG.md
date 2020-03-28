@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.24](https://github.com/3nvi/gatsby-intl/compare/v0.1.23...v0.1.24) (2020-03-28)
+
+
+### Features
+
+* add `deleteOriginalPages` option ([7713f1b](https://github.com/3nvi/gatsby-intl/commit/7713f1bc30b54781bf9e1432366c51ab604a79e8))
+
+
+
+
+
 ## [0.1.23](https://github.com/3nvi/gatsby-intl/compare/v0.1.22...v0.1.23) (2020-03-28)
 
 **Note:** Version bump only for package @3nvi/gatsby-plugin-intl
