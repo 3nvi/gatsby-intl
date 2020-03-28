@@ -23,7 +23,7 @@ Due to the fact that the starter is in a lerna monorepo (and not in a separate s
 ```
 git clone https://github.com/3nvi/gatsby-intl intl-site
 cd intl-site/packages/gatsby-starter-intl
-npm run i
+npm i
 npm run start
 ```
 
