@@ -13,8 +13,8 @@ describe('gatsby-ssr', () => {
         faker.random.locale
       );
       const defaultLanguage = faker.random.arrayElement(supportedLanguages);
-      const translationKey = faker.random.word();
-      const translationValue = faker.random.word();
+      const translationKey = faker.lorem.word();
+      const translationValue = faker.lorem.word();
 
       const pluginOpts = {
         supportedLanguages,
