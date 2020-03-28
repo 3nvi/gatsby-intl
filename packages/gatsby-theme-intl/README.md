@@ -12,7 +12,7 @@ React Components to help you handle translations and other internalization chore
 - Creates all the necessary SEO tags for each of your new localized pages
 - Creates proper redirects based on Language headers, as well as the default/fallback language
 
-At its core, this plugin exposes two useful hooks:
+At its core, this plugin exposes the following:
 
 ### `usePageContext`
 
@@ -52,7 +52,20 @@ const Component = () => {
 };
 ```
 
-In addition to those 2 hooks, the package configures & forwards all React components present in
+### `Link`
+
+A wrapper around gatsby-link, that accepts the original path and converts it to a intl-aware link, depending on the currently
+active language.
+
+```jsx harmony
+import { Link } from '@3nvi/gatsby-theme-intl';
+
+const Component = () => {
+  return <Link to="/about">About</Link>; // destination gets automatically converted to `/{activeLanguage}/about`
+};
+```
+
+In addition to these, the package configures & forwards all React components present in
 the [react-i18next](https://github.com/i18next/react-i18next/) package.
 
 ## Quick Start
