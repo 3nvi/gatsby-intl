@@ -27,6 +27,6 @@
     "packages/gatsby-plugin-intl",
     "packages/gatsby-theme-intl"
   ],
-  "version": "0.3.0",
+  "version": "0.4.0",
   "registry": "https://registry.npmjs.org/"
 }
