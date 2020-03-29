@@ -68,15 +68,8 @@ The plugin accepts the following **optional options**:
   `URL` (which platforms like Netlify automatically populate) or to `localhost:8000` if the environment variable is not present.
 - `exludedPages`: A list page paths that the plugin should ignore. Defaults to `/404.html`.
 - `notFoundPage`: The URL for a custom 404 page. Defaults to `/404/`.
-
-## Caveats
-
-Due to the fact that each page path is substituted with the localized one, there will be no `/` page
-in the project. Instead all `/` will be redirected to the appropriate locales.
-
-Production builds are fine with that since redirects are handled on the server. Development builds however
-may create a minor problem since redirect happens in the browser (and there is no default page to redirect from).
-Because of this, **page refreshes** on non-localized URLs will not work during development
+- `deleteOriginalPages`: A boolean denoting whether to delete the original non-localized pages or retain them at
+  their original paths. Defaults to `false` for production builds and `true` for development ones.
 
 ## License
 

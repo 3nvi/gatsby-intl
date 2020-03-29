@@ -9,7 +9,14 @@ export const onCreatePage = async (
   { page, actions: { createPage, deletePage, createRedirect } },
   pluginOptions
 ) => {
-  const { siteUrl, supportedLanguages, defaultLanguage, notFoundPage, excludedPages } = {
+  const {
+    siteUrl,
+    supportedLanguages,
+    defaultLanguage,
+    notFoundPage,
+    excludedPages,
+    deleteOriginalPages,
+  } = {
     ...DEFAULT_OPTIONS,
     ...pluginOptions,
   };
@@ -25,7 +32,9 @@ export const onCreatePage = async (
 
   // Delete the original page (since we are gonna create localized versions of it) and add a
   // redirect header
-  await deletePage(page);
+  if (deleteOriginalPages) {
+    await deletePage(page);
+  }
 
   await Promise.all(
     supportedLanguages.map(async lang => {
