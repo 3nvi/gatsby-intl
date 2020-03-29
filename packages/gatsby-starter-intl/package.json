@@ -17,7 +17,7 @@
     "multi-language"
   ],
   "dependencies": {
-    "@3nvi/gatsby-theme-intl": "^0.2.1",
+    "@3nvi/gatsby-theme-intl": "^0.4.1",
     "gatsby": "^2.18.1",
     "gatsby-image": "^2.2.33",
     "gatsby-plugin-manifest": "^2.2.29",
