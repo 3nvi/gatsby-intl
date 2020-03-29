@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import faker from 'faker';
 import { render } from '@testing-library/react';
-import { waitFor } from '@testing-library/dom';
+import { waitFor, screen } from '@testing-library/dom';
 import { wrapRootElement } from '../gatsby-ssr';
 import { useTranslation } from '../index'; // eslint-disable-line
 
@@ -21,6 +21,9 @@ describe('gatsby-ssr', () => {
         supportedLanguages,
         defaultLanguage,
         i18nextConfig: {
+          react: {
+            useSuspense: false,
+          },
           resources: {
             [defaultLanguage]: {
               translation: {
@@ -36,8 +39,8 @@ describe('gatsby-ssr', () => {
         return <div>{t(translationKey)}</div>;
       };
 
-      const { getByText } = render(wrapRootElement({ element: <Component /> }, pluginOpts));
-      await waitFor(() => expect(getByText(translationValue)).toBeTruthy());
+      render(wrapRootElement({ element: <Component /> }, pluginOpts));
+      await waitFor(() => expect(screen.getByText(translationValue)).toBeTruthy());
     });
   });
 });
