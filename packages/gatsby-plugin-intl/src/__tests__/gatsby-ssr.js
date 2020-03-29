@@ -5,10 +5,9 @@ import { render } from '@testing-library/react';
 import { wrapPageElement } from '../gatsby-ssr';
 import { waitFor } from '@testing-library/dom';
 
-const createMockPageProps = () => {
-  const supportedLanguages = Array.from({ length: faker.random.number(5) }, faker.random.locale);
-  const originalPath = `/${faker.lorem.slug()}`;
+const createMockPageProps = ({ supportedLanguages, siteUrl }) => {
   const lang = faker.random.arrayElement(supportedLanguages);
+  const originalPath = `/${faker.lorem.slug()}`;
   return {
     location: {
       pathname: `/${lang}${originalPath}`,
@@ -16,7 +15,7 @@ const createMockPageProps = () => {
     pageContext: {
       supportedLanguages,
       originalPath,
-      siteUrl: faker.internet.url(),
+      siteUrl,
       lang,
     },
   };
@@ -26,10 +25,14 @@ describe('gatsby-ssr', () => {
   describe('wrapPageElement', () => {
     let element;
     let props;
+    let supportedLanguages;
+    let siteUrl;
 
     beforeEach(() => {
+      supportedLanguages = Array.from({ length: faker.random.number(5) }, faker.random.locale);
+      siteUrl = faker.internet.url();
       element = <div>{faker.lorem.sentence()}</div>;
-      props = createMockPageProps();
+      props = createMockPageProps({ siteUrl, supportedLanguages });
     });
 
     it('returns the page element if the page is excluded', async done => {
@@ -43,9 +46,10 @@ describe('gatsby-ssr', () => {
     });
 
     it('adds proper SEO tags for non-excluded pages ', async () => {
-      render(wrapPageElement({ element, props }, {}));
+      const pluginOpts = { siteUrl, supportedLanguages };
+      render(wrapPageElement({ element, props }, pluginOpts));
 
-      const { lang, siteUrl, originalPath, supportedLanguages } = props.pageContext;
+      const { lang, originalPath } = props.pageContext;
       await waitFor(() => {
         expect(document.documentElement.getAttribute('lang')).toEqual(lang);
 

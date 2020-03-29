@@ -39,15 +39,12 @@ describe('onCreatePage', () => {
     expect(createRedirect).not.toHaveBeenCalled();
   });
 
-  it('deletes the original pages & creates localized pages with proper context', async () => {
+  it(' creates localized pages with proper context', async () => {
     const supportedLanguages = Array.from({ length: faker.random.number(5) }, faker.random.locale);
     const page = createMockPage(pagePath, { key: faker.random.word() });
     const pluginOpts = { supportedLanguages, siteUrl: faker.internet.url() };
 
     await onCreatePage({ page, actions: { createPage, deletePage, createRedirect } }, pluginOpts);
-
-    expect(deletePage).toHaveBeenCalledTimes(1);
-    expect(deletePage).toHaveBeenCalledWith(page);
 
     expect(createPage).toHaveBeenCalledTimes(supportedLanguages.length);
     supportedLanguages.forEach((lang, index) => {
@@ -63,6 +60,35 @@ describe('onCreatePage', () => {
         },
       });
     });
+  });
+
+  it('deletes the original pages if `deleteOriginalPages` is `true`', async () => {
+    const supportedLanguages = Array.from({ length: faker.random.number(5) }, faker.random.locale);
+    const page = createMockPage(pagePath, { key: faker.random.word() });
+    const pluginOpts = {
+      supportedLanguages,
+      siteUrl: faker.internet.url(),
+      deleteOriginalPages: true,
+    };
+
+    await onCreatePage({ page, actions: { createPage, deletePage, createRedirect } }, pluginOpts);
+
+    expect(deletePage).toHaveBeenCalledTimes(1);
+    expect(deletePage).toHaveBeenCalledWith(page);
+  });
+
+  it('retains the original pages if `deleteOriginalPages` is `false`', async () => {
+    const supportedLanguages = Array.from({ length: faker.random.number(5) }, faker.random.locale);
+    const page = createMockPage(pagePath, { key: faker.random.word() });
+    const pluginOpts = {
+      supportedLanguages,
+      siteUrl: faker.internet.url(),
+      deleteOriginalPages: false,
+    };
+
+    await onCreatePage({ page, actions: { createPage, deletePage, createRedirect } }, pluginOpts);
+
+    expect(deletePage).not.toHaveBeenCalled();
   });
 
   it('creates proper redirect for each page', async () => {
