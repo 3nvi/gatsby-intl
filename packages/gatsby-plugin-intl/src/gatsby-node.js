@@ -10,7 +10,6 @@ export const onCreatePage = async (
   pluginOptions
 ) => {
   const {
-    siteUrl,
     supportedLanguages,
     defaultLanguage,
     notFoundPage,
@@ -55,8 +54,6 @@ export const onCreatePage = async (
         path: localizedPath,
         context: {
           ...page.context,
-          supportedLanguages,
-          siteUrl,
           originalPath,
           lang,
         },
