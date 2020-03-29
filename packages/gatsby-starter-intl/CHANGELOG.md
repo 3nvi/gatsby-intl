@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.4](https://github.com/3nvi/gatsby-intl/compare/v0.4.3...v0.4.4) (2020-03-29)
+
+
+### Bug Fixes
+
+* add fallback for `siteUrl` in gatsby site metadata ([5e081cd](https://github.com/3nvi/gatsby-intl/commit/5e081cd19e4e22e1aa07b6b3953edb60ba84b0fb))
+
+
+
+
+
 ## [0.4.3](https://github.com/3nvi/gatsby-intl/compare/v0.4.2...v0.4.3) (2020-03-29)
 
 **Note:** Version bump only for package @3nvi/gatsby-starter-intl
