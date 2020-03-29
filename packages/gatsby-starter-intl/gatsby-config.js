@@ -5,7 +5,7 @@ module.exports = {
     title: `Gatsby Starter Intl`,
     description: `Kick off your next, great Gatsby i18n project with this starter. It extends gatsby-starter-default.`,
     author: `@3nvi`,
-    siteUrl: process.env.URL,
+    siteUrl: process.env.URL || "localhost:8000",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
