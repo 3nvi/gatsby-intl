@@ -36,7 +36,6 @@ module.exports = {
       options: {
         supportedLanguages: ["en", "el"],
         defaultLanguage: "en",
-        excludedPages: [], // we don't exclude any page since even the 404 page in this example can be i18n-compatible
         i18nextConfig: {
           resources,
         },

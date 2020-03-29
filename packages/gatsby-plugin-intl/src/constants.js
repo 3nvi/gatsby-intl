@@ -13,7 +13,7 @@ export const DEFAULT_OPTIONS = {
 
   // a list of paths, whose pages should not be processed by this plugin (i.e. delegate to whatever
   // gatsby would do by default)
-  excludedPages: ['/404.html'],
+  excludedPages: [],
 
   // Whether to delete the original pages at the original URLs or keep them
   deleteOriginalPages: process.env.NODE_ENV === 'production',

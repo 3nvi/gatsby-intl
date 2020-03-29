@@ -66,7 +66,7 @@ The plugin accepts the following **optional options**:
 - `defaultLanguage`: The default/fallback locale of your application. Defaults to `en`.
 - `siteUrl`: The URL of your site that's used when creating SEO tags. Defaults to the environment variable
   `URL` (which platforms like Netlify automatically populate) or to `localhost:8000` if the environment variable is not present.
-- `exludedPages`: A list page paths that the plugin should ignore. Defaults to `/404.html`.
+- `exludedPages`: A list page paths that the plugin should ignore. Defaults to `[]`.
 - `notFoundPage`: The URL for a custom 404 page. Defaults to `/404/`.
 - `deleteOriginalPages`: A boolean denoting whether to delete the original non-localized pages or retain them at
   their original paths. Defaults to `false` for production builds and `true` for development ones.
