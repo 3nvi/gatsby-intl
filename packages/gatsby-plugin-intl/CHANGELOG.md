@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/3nvi/gatsby-intl/compare/v0.4.2...v0.4.3) (2020-03-29)
+
+
+### Bug Fixes
+
+* tests ([df21acd](https://github.com/3nvi/gatsby-intl/commit/df21acdffa907d903cae39533c2f26f0478520fd))
+
+
+
+
+
 ## [0.4.1](https://github.com/3nvi/gatsby-intl/compare/v0.4.0...v0.4.1) (2020-03-29)
 
 **Note:** Version bump only for package @3nvi/gatsby-plugin-intl
