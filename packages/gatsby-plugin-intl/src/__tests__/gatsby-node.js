@@ -53,8 +53,6 @@ describe('onCreatePage', () => {
         path: `/${supportedLanguages[index]}${page.path}`,
         context: {
           ...page.context,
-          supportedLanguages,
-          siteUrl: pluginOpts.siteUrl,
           originalPath: page.path,
           lang,
         },
