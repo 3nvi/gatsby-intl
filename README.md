@@ -17,3 +17,7 @@ This is the best way to integrate i18n for the first time into an existing gatsb
 A low-level gatsby plugin that only handles SEO & automatic localized page generation, while delegating
 translations to the developer. This is ideal to use if you already have a way of doing the translations and you
 just want to handle the SEO tags & the automatic page generation for each locale.
+
+## Additional Context
+
+If you want to understand more about how things are orchestrated and what's happening under the hood, please refer to the related [Medium Blog Post](https://itnext.io/techniques-approaches-for-multi-language-gatsby-apps-8ba13ff433c5) which analyzes the motivation, thought process and approach behind these packages.
