@@ -25,7 +25,7 @@ describe('gatsby-ssr', () => {
   describe('wrapPageElement', () => {
     it('returns the page element if the page is excluded', async done => {
       const supportedLanguages = Array.from(
-        { length: faker.random.number(5) },
+        { length: faker.random.number({ min: 2, max: 5 }) },
         faker.random.locale
       );
       const siteUrl = faker.internet.url();
@@ -43,7 +43,7 @@ describe('gatsby-ssr', () => {
 
     it('adds proper SEO tags for non-excluded pages ', async () => {
       const supportedLanguages = Array.from(
-        { length: faker.random.number(5) },
+        { length: faker.random.number({ min: 2, max: 5 }) },
         faker.random.locale
       );
       const siteUrl = faker.internet.url();

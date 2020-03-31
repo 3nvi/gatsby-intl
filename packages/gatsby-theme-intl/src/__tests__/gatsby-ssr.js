@@ -10,7 +10,7 @@ describe('gatsby-ssr', () => {
   describe('wrapRootElement', () => {
     it('correctly wraps root element with translation provider', async () => {
       const supportedLanguages = Array.from(
-        { length: faker.random.number(5) },
+        { length: faker.random.number({ min: 2, max: 5 }) },
         faker.random.locale
       );
       const defaultLanguage = faker.random.arrayElement(supportedLanguages);

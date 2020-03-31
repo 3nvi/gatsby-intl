@@ -40,7 +40,10 @@ describe('onCreatePage', () => {
   });
 
   it(' creates localized pages with proper context', async () => {
-    const supportedLanguages = Array.from({ length: faker.random.number(5) }, faker.random.locale);
+    const supportedLanguages = Array.from(
+      { length: faker.random.number({ min: 2, max: 5 }) },
+      faker.random.locale
+    );
     const page = createMockPage(pagePath, { key: faker.random.word() });
     const pluginOpts = { supportedLanguages, siteUrl: faker.internet.url() };
 
@@ -61,7 +64,10 @@ describe('onCreatePage', () => {
   });
 
   it('deletes the original pages if `deleteOriginalPages` is `true`', async () => {
-    const supportedLanguages = Array.from({ length: faker.random.number(5) }, faker.random.locale);
+    const supportedLanguages = Array.from(
+      { length: faker.random.number({ min: 2, max: 5 }) },
+      faker.random.locale
+    );
     const page = createMockPage(pagePath, { key: faker.random.word() });
     const pluginOpts = {
       supportedLanguages,
@@ -76,7 +82,10 @@ describe('onCreatePage', () => {
   });
 
   it('retains the original pages if `deleteOriginalPages` is `false`', async () => {
-    const supportedLanguages = Array.from({ length: faker.random.number(5) }, faker.random.locale);
+    const supportedLanguages = Array.from(
+      { length: faker.random.number({ min: 2, max: 5 }) },
+      faker.random.locale
+    );
     const page = createMockPage(pagePath, { key: faker.random.word() });
     const pluginOpts = {
       supportedLanguages,
@@ -90,7 +99,10 @@ describe('onCreatePage', () => {
   });
 
   it('creates proper redirect for each page', async () => {
-    const supportedLanguages = Array.from({ length: faker.random.number(5) }, faker.random.locale);
+    const supportedLanguages = Array.from(
+      { length: faker.random.number({ min: 2, max: 5 }) },
+      faker.random.locale
+    );
     const page = createMockPage(pagePath);
     const pluginOpts = { supportedLanguages, defaultLanguage: supportedLanguages[1] };
 
