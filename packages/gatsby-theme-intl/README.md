@@ -39,7 +39,7 @@ const Component = () => {
 
 ### `useTranslation`
 
-Returns a helper functions for translations. This package uses & configures [i18next](https://github.com/i18next/i18next)
+Returns a helper function for translations. This package uses & configures [i18next](https://github.com/i18next/i18next)
 under the hood, so you can read more there about how to configure your translations.
 
 ```jsx harmony
@@ -98,7 +98,7 @@ and in your `gatsby-config.js`:
 The plugin accepts all **optional options** present in [gatsby-plugin-intl](https://github.com/3nvi/gatsby-intl/tree/master/packages/gatsby-plugin-intl). Additionally,
 it accepts the following:
 
-- `i18nextConfig`: Configuration optioons for the `i18next` instance that this theme uses under the hood. The available
+- `i18nextConfig`: Configuration options for the `i18next` instance that this theme uses under the hood. The available
   options can be found in the [official docs](https://www.i18next.com/overview/configuration-options).
 
   This package already adds a sane default configuration for i18next, which is automatically merged with
