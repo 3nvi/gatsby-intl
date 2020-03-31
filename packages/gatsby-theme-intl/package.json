@@ -3,7 +3,7 @@
   "private": false,
   "main": "index.js",
   "description": "A theme to automate the mundane tasks of translation & localization of static pages",
-  "version": "0.4.3",
+  "version": "0.4.5",
   "author": "Aggelos Arvanitakis (@3nvi)",
   "dependencies": {
     "@3nvi/gatsby-plugin-intl": "^0.4.3",
