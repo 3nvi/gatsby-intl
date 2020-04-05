@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.6](https://github.com/3nvi/gatsby-intl/compare/v0.4.5...v0.4.6) (2020-04-05)
+
+**Note:** Version bump only for package @3nvi/gatsby-starter-intl
+
+
+
+
+
 ## [0.4.5](https://github.com/3nvi/gatsby-intl/compare/v0.4.4...v0.4.5) (2020-03-31)
 
 **Note:** Version bump only for package @3nvi/gatsby-starter-intl
