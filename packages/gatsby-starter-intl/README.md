@@ -27,6 +27,17 @@ npm i
 npm run start
 ```
 
+## Known Issues
+At the moment of writing, Netlify has a bug where if more than one `Accept-Language`s are sent, then the language redirects don’t work. You can track the related issue [here](https://community.netlify.com/t/language-based-redirect-only-works-when-1-browser-language-set/4252/6).
+
+To verify that redirects **do work** when a single `Accept-Language` value is sent, you can issue a request with just one language:
+
+```
+curl -H 'Accept-Language: de' -L -v -s https://YOUR_SITE.netlify.com 1> /dev/null
+```
+
+and expect the redirects to work
+
 ## License
 
 MIT
