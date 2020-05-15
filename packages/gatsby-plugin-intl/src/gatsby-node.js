@@ -37,7 +37,7 @@ export const onCreatePage = async (
 
   await Promise.all(
     supportedLanguages.map(async lang => {
-      const localizedPath = `/${lang}${page.path}`;
+      const localizedPath = `/${lang}${originalPath}`;
 
       // create a redirect based on the accept-language header
       createRedirect({
@@ -65,7 +65,7 @@ export const onCreatePage = async (
   // Accept-Language header is missing for some reason
   createRedirect({
     fromPath: originalPath,
-    toPath: `/${defaultLanguage}${page.path}`,
+    toPath: `/${defaultLanguage}${originalPath}`,
     isPermanent: false,
     redirectInBrowser: isEnvDevelopment,
     statusCode: is404 ? 404 : 301,
