@@ -52,6 +52,7 @@ export const onCreatePage = async (
       await createPage({
         ...page,
         path: localizedPath,
+        matchPath: page.matchPath ? `/${lang}${page.matchPath}` : undefined,
         context: {
           ...page.context,
           originalPath,
