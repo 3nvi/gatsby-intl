@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.8](https://github.com/3nvi/gatsby-intl/compare/v0.4.7...v0.4.8) (2020-05-30)
+
+
+### Bug Fixes
+
+* **gatsby-theme-intl:** add missing `matchPath` typing ([e7b46bc](https://github.com/3nvi/gatsby-intl/commit/e7b46bc6c8de685db9bbaef32c20bcfac79a99ae))
+
+
+
+
+
 ## [0.4.7](https://github.com/3nvi/gatsby-intl/compare/v0.4.6...v0.4.7) (2020-05-30)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
