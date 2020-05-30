@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.7](https://github.com/3nvi/gatsby-intl/compare/v0.4.6...v0.4.7) (2020-05-30)
+
+
+### Bug Fixes
+
+* **gatsby-plugin-intl:** issue with client-only route redirercts ([e5201a8](https://github.com/3nvi/gatsby-intl/commit/e5201a87c449be9db0a51152c0be37d902149be0))
+
+
+
+
+
 ## [0.4.6](https://github.com/3nvi/gatsby-intl/compare/v0.4.5...v0.4.6) (2020-04-05)
 
 **Note:** Version bump only for package root
