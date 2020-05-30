@@ -6,10 +6,11 @@ interface PageContext {
   siteUrl: string;
   originalPath: string;
   lang: string;
+  matchPath?: string;
 }
 
 export * from 'react-i18next';
 
 export declare function usePageContext(): PageContext;
 
-export declare const Link: React.ForwardRefRenderFunction<HTMLAnchorElement, GatsbyLinkProps>;
+export declare const Link: React.ForwardRefRenderFunction<HTMLAnchorElement, GatsbyLinkProps<any>>;
