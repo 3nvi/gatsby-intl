@@ -126,6 +126,55 @@ const translations = require('./i18n.json');
 }
 ```
 
+# Client-Only Routes
+
+For implementing client-only routes gatsby recommends using its dedicated [gatsby-plugin-create-client-paths](https://www.gatsbyjs.org/packages/gatsby-plugin-create-client-paths/). This
+can work in tandem with `gatsby-theme-intl` by simply:
+
+1. Including `gatsby-plugin-create-client-paths` before `gastby-theme-intl`:
+
+```js
+const translations = require('./i18n.json');
+
+{
+  // ... rest of your config
+  plugins: [
+    // ... other plugins
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/app/*`] },
+    },
+    {
+      resolve: `@3nvi/gatsby-theme-intl`,
+      options: {
+        supportedLanguages: ['en', 'fr']
+        i18nextConfig: {
+          resources: translations,
+        },
+      },
+    },
+  ];
+}
+```
+
+2. Making sure that the [Router component's `basePath`](https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/#configuring-and-handling-client-only-routes-on-a-server)
+   matches the value of the `matchPath` which is part of `usePageContext`. This is set by `gatsby-plugin-create-client-paths` for client-only pages. For example, using
+   the previous config (where all `/app/*` paths were client-only), we would do:
+
+```jsx harmony
+// app.js
+const App = () => {
+  const { matchPath } = usePageContext();
+
+  return (
+    <Router basepath={matchPath}>
+      <ComponentOne path="/client-only-route-1" />
+      <ComponentTwo path="/client-only-route-2" />
+    </Router>
+  );
+};
+```
+
 ## Usage Examples
 
 Visit the related [gatsby starter](https://github.com/3nvi/gatsby-intl/tree/master/packages/gatsby-starter-intl) to
