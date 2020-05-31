@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.10](https://github.com/3nvi/gatsby-intl/compare/v0.4.9...v0.4.10) (2020-05-31)
+
+
+### Bug Fixes
+
+* change default value of `deleteOriginalPages` for dev ([565fc5c](https://github.com/3nvi/gatsby-intl/commit/565fc5cac3cb601b0979049a2e45e6757d379388))
+
+
+
+
+
 ## [0.4.8](https://github.com/3nvi/gatsby-intl/compare/v0.4.7...v0.4.8) (2020-05-30)
 
 **Note:** Version bump only for package @3nvi/gatsby-plugin-intl
