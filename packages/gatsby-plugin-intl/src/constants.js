@@ -16,5 +16,5 @@ export const DEFAULT_OPTIONS = {
   excludedPages: [],
 
   // Whether to delete the original pages at the original URLs or keep them
-  deleteOriginalPages: process.env.NODE_ENV === 'production',
+  deleteOriginalPages: true,
 };
