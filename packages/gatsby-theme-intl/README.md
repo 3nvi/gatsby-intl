@@ -158,16 +158,15 @@ const translations = require('./i18n.json');
 ```
 
 2. Making sure that the [Router component's `basePath`](https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/#configuring-and-handling-client-only-routes-on-a-server)
-   matches the value of the `matchPath` which is part of `usePageContext`. This is set by `gatsby-plugin-create-client-paths` for client-only pages. For example, using
-   the previous config (where all `/app/*` paths were client-only), we would do:
+   contains the language prefix before the dynamic URL part. You can get the current language from `usePageContext`. For example, using the previous config (where all `/app/*` paths were client-only), we would do:
 
 ```jsx harmony
 // app.js
 const App = () => {
-  const { matchPath } = usePageContext();
+  const { lang } = usePageContext();
 
   return (
-    <Router basepath={matchPath}>
+    <Router basepath={`/${lang}/app`}>
       <ComponentOne path="/client-only-route-1" />
       <ComponentTwo path="/client-only-route-2" />
     </Router>

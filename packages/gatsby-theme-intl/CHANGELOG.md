@@ -3,37 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.4.7](https://github.com/3nvi/gatsby-intl/compare/v0.4.6...v0.4.7) (2020-05-30)
+## [0.4.9](https://github.com/3nvi/gatsby-intl/compare/v0.4.8...v0.4.9) (2020-05-30)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
 
+## [0.4.8](https://github.com/3nvi/gatsby-intl/compare/v0.4.7...v0.4.8) (2020-05-30)
 
+### Bug Fixes
 
+- **gatsby-theme-intl:** add missing `matchPath` typing ([e7b46bc](https://github.com/3nvi/gatsby-intl/commit/e7b46bc6c8de685db9bbaef32c20bcfac79a99ae))
 
+## [0.4.7](https://github.com/3nvi/gatsby-intl/compare/v0.4.6...v0.4.7) (2020-05-30)
+
+**Note:** Version bump only for package @3nvi/gatsby-theme-intl
 
 ## [0.4.5](https://github.com/3nvi/gatsby-intl/compare/v0.4.4...v0.4.5) (2020-03-31)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
 
-
-
-
-
 ## [0.4.3](https://github.com/3nvi/gatsby-intl/compare/v0.4.2...v0.4.3) (2020-03-29)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
 
-
-
-
-
 ## [0.4.1](https://github.com/3nvi/gatsby-intl/compare/v0.4.0...v0.4.1) (2020-03-29)
 
 **Note:** Version bump only for package @3nvi/gatsby-theme-intl
-
-
-
-
 
 # [0.4.0](https://github.com/3nvi/gatsby-intl/compare/v0.3.0...v0.4.0) (2020-03-29)
 

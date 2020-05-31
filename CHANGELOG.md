@@ -3,54 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.4.7](https://github.com/3nvi/gatsby-intl/compare/v0.4.6...v0.4.7) (2020-05-30)
+## [0.4.9](https://github.com/3nvi/gatsby-intl/compare/v0.4.8...v0.4.9) (2020-05-30)
 
+**Note:** Version bump only for package root
+
+## [0.4.8](https://github.com/3nvi/gatsby-intl/compare/v0.4.7...v0.4.8) (2020-05-30)
 
 ### Bug Fixes
 
-* **gatsby-plugin-intl:** issue with client-only route redirercts ([e5201a8](https://github.com/3nvi/gatsby-intl/commit/e5201a87c449be9db0a51152c0be37d902149be0))
+- **gatsby-theme-intl:** add missing `matchPath` typing ([e7b46bc](https://github.com/3nvi/gatsby-intl/commit/e7b46bc6c8de685db9bbaef32c20bcfac79a99ae))
 
+## [0.4.7](https://github.com/3nvi/gatsby-intl/compare/v0.4.6...v0.4.7) (2020-05-30)
 
+### Bug Fixes
 
-
+- **gatsby-plugin-intl:** issue with client-only route redirercts ([e5201a8](https://github.com/3nvi/gatsby-intl/commit/e5201a87c449be9db0a51152c0be37d902149be0))
 
 ## [0.4.6](https://github.com/3nvi/gatsby-intl/compare/v0.4.5...v0.4.6) (2020-04-05)
 
 **Note:** Version bump only for package root
 
-
-
-
-
 ## [0.4.5](https://github.com/3nvi/gatsby-intl/compare/v0.4.4...v0.4.5) (2020-03-31)
 
 **Note:** Version bump only for package root
 
-
-
-
-
 ## [0.4.4](https://github.com/3nvi/gatsby-intl/compare/v0.4.3...v0.4.4) (2020-03-29)
-
 
 ### Bug Fixes
 
-* add fallback for `siteUrl` in gatsby site metadata ([5e081cd](https://github.com/3nvi/gatsby-intl/commit/5e081cd19e4e22e1aa07b6b3953edb60ba84b0fb))
-
-
-
-
+- add fallback for `siteUrl` in gatsby site metadata ([5e081cd](https://github.com/3nvi/gatsby-intl/commit/5e081cd19e4e22e1aa07b6b3953edb60ba84b0fb))
 
 ## [0.4.3](https://github.com/3nvi/gatsby-intl/compare/v0.4.2...v0.4.3) (2020-03-29)
 
-
 ### Bug Fixes
 
-* tests ([df21acd](https://github.com/3nvi/gatsby-intl/commit/df21acdffa907d903cae39533c2f26f0478520fd))
-
-
-
-
+- tests ([df21acd](https://github.com/3nvi/gatsby-intl/commit/df21acdffa907d903cae39533c2f26f0478520fd))
 
 ## [0.4.2](https://github.com/3nvi/gatsby-intl/compare/v0.4.1...v0.4.2) (2020-03-29)
 
