@@ -1,6 +1,11 @@
 The MIT License (MIT)
 
 Copyright (c) 2020 3nvi
+Copyright (c) 2015 gatsbyjs
+
+Copyright for portions of gatsby-intl-starter are held by gatsbyjs, 2015 as 
+part of project gatsby-starter-default. All other copyright for project 
+gatsby-intl-starter are held by Aggelos Arvanitakis, 2020.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
