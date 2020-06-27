@@ -29,12 +29,25 @@ export const onCreatePage = async (
     return;
   }
 
-  // Delete the original page (since we are gonna create localized versions of it) and add a
-  // redirect header
-  if (deleteOriginalPages) {
-    await deletePage(page);
+  // Always delete the original page (since we are gonna create localized versions of it) header
+  await deletePage(page);
+
+  // If the user didn't want to delete the original pages, we re-create them with the proper context
+  // (currently the only way to add new context to a page is to delete and re-create it
+  // https://www.gatsbyjs.org/docs/creating-and-modifying-pages/#pass-context-to-pages
+  if (!deleteOriginalPages) {
+    await createPage({
+      ...page,
+      context: {
+        ...page.context,
+        originalPath,
+        lang: defaultLanguage,
+      },
+    });
   }
 
+  // Regardless of whether the original page was deleted or not, create the localized versions of
+  // the current page
   await Promise.all(
     supportedLanguages.map(async lang => {
       const localizedPath = `/${lang}${page.path}`;
@@ -63,14 +76,17 @@ export const onCreatePage = async (
   );
 
   // Create a fallback redirect if the language is not supported or the
-  // Accept-Language header is missing for some reason
-  createRedirect({
-    fromPath: originalPath,
-    toPath: `/${defaultLanguage}${page.path}`,
-    isPermanent: false,
-    redirectInBrowser: isEnvDevelopment,
-    statusCode: is404 ? 404 : 301,
-  });
+  // Accept-Language header is missing for some reason.
+  // We only do that if the originalPath is not present anymore (i.e. the original page was deleted)
+  if (deleteOriginalPages) {
+    createRedirect({
+      fromPath: originalPath,
+      toPath: `/${defaultLanguage}${page.path}`,
+      isPermanent: false,
+      redirectInBrowser: isEnvDevelopment,
+      statusCode: is404 ? 404 : 301,
+    });
+  }
 };
 
 export const onPreBuild = ({ actions: { createRedirect } }, pluginOptions) => {

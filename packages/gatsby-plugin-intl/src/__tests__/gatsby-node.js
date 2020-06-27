@@ -77,8 +77,11 @@ describe('onCreatePage', () => {
 
     await onCreatePage({ page, actions: { createPage, deletePage, createRedirect } }, pluginOpts);
 
+    // we always delete it
     expect(deletePage).toHaveBeenCalledTimes(1);
-    expect(deletePage).toHaveBeenCalledWith(page);
+
+    // but we won't re-create it (we only create localized pages)
+    expect(createPage).toHaveBeenCalledTimes(supportedLanguages.length);
   });
 
   it('retains the original pages if `deleteOriginalPages` is `false`', async () => {
@@ -95,7 +98,11 @@ describe('onCreatePage', () => {
 
     await onCreatePage({ page, actions: { createPage, deletePage, createRedirect } }, pluginOpts);
 
-    expect(deletePage).not.toHaveBeenCalled();
+    // we always delete it
+    expect(deletePage).toHaveBeenCalledTimes(1);
+
+    // and will re-create it if needed with the proper context
+    expect(createPage).toHaveBeenCalledTimes(supportedLanguages.length + 1);
   });
 
   it('creates proper redirect for each page', async () => {
@@ -104,11 +111,14 @@ describe('onCreatePage', () => {
       faker.random.locale
     );
     const page = createMockPage(pagePath);
-    const pluginOpts = { supportedLanguages, defaultLanguage: supportedLanguages[1] };
+    const pluginOpts = {
+      supportedLanguages,
+      defaultLanguage: supportedLanguages[1],
+      deleteOriginalPages: faker.random.boolean(),
+    };
 
     await onCreatePage({ page, actions: { createPage, deletePage, createRedirect } }, pluginOpts);
 
-    expect(createRedirect).toHaveBeenCalledTimes(supportedLanguages.length + 1);
     supportedLanguages.forEach((lang, index) => {
       expect(createRedirect).toHaveBeenNthCalledWith(index + 1, {
         fromPath: page.path,
@@ -120,13 +130,19 @@ describe('onCreatePage', () => {
       });
     });
 
-    expect(createRedirect).toHaveBeenLastCalledWith({
-      fromPath: page.path,
-      toPath: `/${pluginOpts.defaultLanguage}${page.path}`,
-      isPermanent: false,
-      redirectInBrowser: false,
-      statusCode: pluginOpts.notFoundPage ? 404 : 301,
-    });
+    // global original-page redirect should only  be added when the original pages are deleted
+    if (pluginOpts.deleteOriginalPages) {
+      expect(createRedirect).toHaveBeenCalledTimes(supportedLanguages.length + 1);
+      expect(createRedirect).toHaveBeenLastCalledWith({
+        fromPath: page.path,
+        toPath: `/${pluginOpts.defaultLanguage}${page.path}`,
+        isPermanent: false,
+        redirectInBrowser: false,
+        statusCode: pluginOpts.notFoundPage ? 404 : 301,
+      });
+    } else {
+      expect(createRedirect).toHaveBeenCalledTimes(supportedLanguages.length);
+    }
   });
 
   it('properly handles 404 status codes for not found pages', async () => {
