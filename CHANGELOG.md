@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.11](https://github.com/3nvi/gatsby-intl/compare/v0.4.10...v0.4.11) (2020-06-27)
+
+
+### Bug Fixes
+
+* don't add original page redirect when original pages exist ([7079450](https://github.com/3nvi/gatsby-intl/commit/7079450fa492d50921b97b7bc5c7d7ec60ad88af))
+
+
+
+
+
 ## [0.4.10](https://github.com/3nvi/gatsby-intl/compare/v0.4.9...v0.4.10) (2020-05-31)
 
 
