@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.13](https://github.com/3nvi/gatsby-intl/compare/v0.4.12...v0.4.13) (2020-07-05)
+
+
+### Bug Fixes
+
+* bumped react-helmet to correct warning ([891ec50](https://github.com/3nvi/gatsby-intl/commit/891ec5012c733a1cf3522ac57ffd35f9e4962c1c))
+
+
+
+
+
 ## [0.4.12](https://github.com/3nvi/gatsby-intl/compare/v0.4.11...v0.4.12) (2020-06-27)
 
 
