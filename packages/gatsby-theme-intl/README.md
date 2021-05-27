@@ -179,6 +179,10 @@ const App = () => {
 Visit the related [gatsby starter](https://github.com/3nvi/gatsby-intl/tree/master/packages/gatsby-starter-intl) to
 see a full example of how this plugin can be used
 
+## Changelog
+
+Please refer to the [Changelog](https://github.com/3nvi/gatsby-intl/blob/master/packages/gatsby-theme-intl/CHANGELOG.md) for information on the details of each release
+
 ## License
 
 MIT
