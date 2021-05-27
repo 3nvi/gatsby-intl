@@ -1,6 +1,6 @@
 {
   "name": "@3nvi/gatsby-starter-intl",
-  "version": "0.4.17",
+  "version": "0.4.18",
   "description": "A gatsby starter to help create i18n applications",
   "author": "Aggelos Arvanitakis (@3nvi)",
   "homepage": "https://github.com/3nvi/gatsby-intl#readme",
@@ -17,7 +17,7 @@
     "multi-language"
   ],
   "dependencies": {
-    "@3nvi/gatsby-theme-intl": "^0.4.17",
+    "@3nvi/gatsby-theme-intl": "^0.4.18",
     "gatsby": "^2.22.15",
     "gatsby-image": "^2.2.33",
     "gatsby-plugin-manifest": "^2.2.29",

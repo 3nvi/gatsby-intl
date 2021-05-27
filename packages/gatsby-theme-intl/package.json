@@ -3,10 +3,10 @@
   "private": false,
   "main": "index.js",
   "description": "A theme to automate the mundane tasks of translation & localization of static pages",
-  "version": "0.4.17",
+  "version": "0.4.18",
   "author": "Aggelos Arvanitakis (@3nvi)",
   "dependencies": {
-    "@3nvi/gatsby-plugin-intl": "^0.4.17",
+    "@3nvi/gatsby-plugin-intl": "^0.4.18",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "i18next": "^19.3.2",
     "lodash.merge": "^4.6.2",
