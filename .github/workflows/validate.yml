@@ -19,3 +19,12 @@ jobs:
 
       - name: Run the tests
         run: npm run test
+
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Audit the production deps
+        run: npm audit --production
