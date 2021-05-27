@@ -71,9 +71,13 @@ The plugin accepts the following **optional options**:
 - `deleteOriginalPages`: A boolean denoting whether to delete the original non-localized pages or retain them at
   their original paths. Defaults to `true`.
 
-# Client-Only Routes
+## Client-Only Routes
 
 Please refer to the related section in [gatsby-theme-intl](https://github.com/3nvi/gatsby-intl/tree/master/packages/gatsby-theme-intl)
+
+## Changelog
+
+Please refer to the [Changelog](https://github.com/3nvi/gatsby-intl/blob/master/packages/gatsby-plugin-intl/CHANGELOG.md) for information on the details of each release
 
 ## License
 
