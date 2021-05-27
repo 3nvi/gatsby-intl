@@ -1,0 +1,26 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Bootstrap packages
+        run: |
+          npm i
+          npm run bootstrap
+
+      - name: Setup Git
+        run: |
+          git config user.name "3nvi"
+          git config user.email "agg.arvanitakis@gmail.com"
+          npm config set '//registry.npmjs.org/:_authToken' "${{ secrets.NPM_TOKEN }}"
+          npm run publish -- --yes
+
+      - name: Publish a new release
+        run: npm run publish -- --yes

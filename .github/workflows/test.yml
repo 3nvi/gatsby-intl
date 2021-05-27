@@ -1,0 +1,21 @@
+on:
+  pull_request:
+    branches:
+      - master
+    types:
+      - opened
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Bootstrap packages
+        run: |
+          npm i
+          npm run bootstrap
+
+      - name: Run the tests
+        run: npm run test
