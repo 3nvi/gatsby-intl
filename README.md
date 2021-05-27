@@ -1,6 +1,6 @@
 # Gatsby Intl
 
-A collection of packages to help you with internalization needs in a Gatsby app. It contains the following:
+A collection of packages to help you with internalization needs when using Gatsby. It contains the following:
 
 ## [`gatsby-starter-intl`](https://github.com/3nvi/gatsby-intl/tree/master/packages/gatsby-starter-intl)
 
