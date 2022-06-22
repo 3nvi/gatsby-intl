@@ -7,7 +7,7 @@
   "author": "Aggelos Arvanitakis (@3nvi)",
   "dependencies": {
     "@3nvi/gatsby-plugin-intl": "^0.4.20",
-    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-react-helmet": "^5.17.0",
     "i18next": "^19.3.2",
     "lodash.merge": "^4.6.2",
     "react-helmet": "^6.1.0",
