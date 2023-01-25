@@ -25,7 +25,8 @@ export const onCreatePage = async (
   const is404 = originalPath.includes(notFoundPage);
 
   // return early if page is exluded
-  if (excludedPages.includes(originalPath)) {
+  const excludedPagesRegex = excludedPages.map(page => new RegExp(page));
+  if (excludedPagesRegex.some(e => e.test(originalPath))) {
     return;
   }
 
