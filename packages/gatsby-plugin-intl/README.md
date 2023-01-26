@@ -38,10 +38,10 @@ if you want a package that includes translations.
 
 ## Quick Start
 
-This plugin depends on `react-helmet` as a peer dependency
+This plugin depends on `react-helmet` & `minimatch` as a peer dependency
 
 ```
-npm i react-helmet gatsby-plugin-react-helmet @3nvi/gatsby-plugin-intl
+npm i react-helmet gatsby-plugin-react-helmet @3nvi/gatsby-plugin-intl minimatch
 ```
 
 and in your `gatsby-config.js`:
@@ -66,7 +66,7 @@ The plugin accepts the following **optional options**:
 - `defaultLanguage`: The default/fallback locale of your application. Defaults to `en`.
 - `siteUrl`: The URL of your site that's used when creating SEO tags. Defaults to the environment variable
   `URL` (which platforms like Netlify automatically populate) or to `localhost:8000` if the environment variable is not present.
-- `excludedPages`: A list page paths that the plugin should ignore. Defaults to `[]`. Allows both strings and regex.
+- `excludedPages`: A list page paths that the plugin should ignore. Defaults to `[]`. Allows both strings and globs.
 - `notFoundPage`: The URL for a custom 404 page. Defaults to `/404/`.
 - `deleteOriginalPages`: A boolean denoting whether to delete the original non-localized pages or retain them at
   their original paths. Defaults to `true`.

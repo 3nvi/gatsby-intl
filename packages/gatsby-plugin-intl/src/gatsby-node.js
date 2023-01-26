@@ -4,6 +4,7 @@
  * it will be accessible from https:// .../en/404/ and https:// .../el/404/
  */
 import { DEFAULT_OPTIONS } from './constants';
+const minimatch = require('minimatch');
 
 export const onCreatePage = async (
   { page, actions: { createPage, deletePage, createRedirect } },
@@ -22,11 +23,10 @@ export const onCreatePage = async (
 
   const isEnvDevelopment = process.env.NODE_ENV === 'development';
   const originalPath = page.path;
-  const is404 = originalPath.includes(notFoundPage);
+  const is404 = originalPath.includes(notFoundPage); // return early if page is excluded
 
-  // return early if page is exluded
-  const excludedPagesRegex = excludedPages.map(page => new RegExp(page));
-  if (excludedPagesRegex.some(e => e.test(originalPath))) {
+  const pageIsExcluded = excludedPages.some(page => minimatch(originalPath, page));
+  if (pageIsExcluded) {
     return;
   }
 
