@@ -41,7 +41,7 @@ if you want a package that includes translations.
 This plugin depends on `react-helmet` as a peer dependency
 
 ```
-npm i react-helmet gatsby-plugin-react-helmet @3nvi/gatsby-plugin-intl minimatch
+npm i react-helmet gatsby-plugin-react-helmet @3nvi/gatsby-plugin-intl
 ```
 
 and in your `gatsby-config.js`:
