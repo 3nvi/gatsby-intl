@@ -38,7 +38,7 @@ if you want a package that includes translations.
 
 ## Quick Start
 
-This plugin depends on `react-helmet` & `minimatch` as a peer dependency
+This plugin depends on `react-helmet` as a peer dependency
 
 ```
 npm i react-helmet gatsby-plugin-react-helmet @3nvi/gatsby-plugin-intl minimatch

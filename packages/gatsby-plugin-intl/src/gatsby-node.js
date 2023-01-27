@@ -3,8 +3,8 @@
  * For example, pages/404.js will be converted to /en/404.js and /el/404.js and
  * it will be accessible from https:// .../en/404/ and https:// .../el/404/
  */
-import { DEFAULT_OPTIONS } from './constants';
 const minimatch = require('minimatch');
+import { DEFAULT_OPTIONS } from './constants';
 
 export const onCreatePage = async (
   { page, actions: { createPage, deletePage, createRedirect } },
@@ -23,9 +23,9 @@ export const onCreatePage = async (
 
   const isEnvDevelopment = process.env.NODE_ENV === 'development';
   const originalPath = page.path;
-  const is404 = originalPath.includes(notFoundPage); // return early if page is excluded
+  const is404 = originalPath.includes(notFoundPage);
 
-  const pageIsExcluded = excludedPages.some(page => minimatch(originalPath, page));
+  const pageIsExcluded = excludedPages.some(page => minimatch(originalPath, page)); // return early if page is excluded
   if (pageIsExcluded) {
     return;
   }
