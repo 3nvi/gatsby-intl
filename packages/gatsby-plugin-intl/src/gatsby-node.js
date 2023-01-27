@@ -3,6 +3,7 @@
  * For example, pages/404.js will be converted to /en/404.js and /el/404.js and
  * it will be accessible from https:// .../en/404/ and https:// .../el/404/
  */
+const minimatch = require('minimatch');
 import { DEFAULT_OPTIONS } from './constants';
 
 export const onCreatePage = async (
@@ -24,8 +25,8 @@ export const onCreatePage = async (
   const originalPath = page.path;
   const is404 = originalPath.includes(notFoundPage);
 
-  // return early if page is exluded
-  if (excludedPages.includes(originalPath)) {
+  const pageIsExcluded = excludedPages.some(page => minimatch(originalPath, page)); // return early if page is excluded
+  if (pageIsExcluded) {
     return;
   }
 
